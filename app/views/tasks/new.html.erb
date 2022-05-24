@@ -1,6 +1,2 @@
 <h2>New Task</h2>
-<%= form_for @task do |f| %>
-  title:
-  details:
-  <%= f.submit %>
-<% end %>
+<%= render "form", task: @task %>

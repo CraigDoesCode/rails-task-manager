@@ -1,0 +1,8 @@
+<h2>Edit <%= @task.title %></h2>
+<h3>current info<h3>
+<p><%= @task.title %></p>
+<p><%= @task.details %></p>
+<p><em><%= @task.completed %></em></p>
+
+<h3>new info</h3>
+<%= render "tasks/form", task: @task %>
